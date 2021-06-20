@@ -1,0 +1,3 @@
+・ユーザー属性の編集
+コンソール上でしかできないので以下参考
+https://qiita.com/USI/items/839d4beabfdfd030be89

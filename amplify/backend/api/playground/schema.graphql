@@ -1,0 +1,15 @@
+type Conversation @model {
+  id: ID!
+  userIds: [String!]
+  messages: [Message] @connection(name: "ConversationMessage")
+}
+
+type Message @model {
+  id: ID!
+  conversationId: Conversation @connection(name: "ConversationMessage")
+  messageOwnerId: String!
+  messageOwnerUsername: String!
+  createdAt: String!
+  body: String!
+  attachment: String
+}
